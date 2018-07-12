@@ -5,7 +5,7 @@
 #USAGE: 
 # ./weather.sh nuremberg (retrieves weather forecast for nuremberg)
 #
-#HINT: You can also includ these functions in your .bashrc to make the "weather" command available
+#HINT: You can also includ the function itself in your .bashrc to make the "weather" command available
 #      on all your shell sessions without the need to call the shellscript itself.
 
 weather() {
