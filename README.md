@@ -20,3 +20,10 @@ Basic scripts I found or wrote to utilize the shell's wonderful capabilities
 ### Time Delta
 * Usage: `timeDelta $x` (*$x = any shell command including parameters to measure execution time for*)
 * Result: The provided shell command is executed and the time it took is printed to the console.
+
+### Speak Time
+* Dependencies: `libttspico-utils` (*includes pico2wave for speech synthesis*)
+* Usage:
+  - Add `@hourly /home/prometheus/shellscripts/speak-time.sh >/dev/null 2>&1` to your crontab (*edit it with* `crontab -e`)
+  - Add `XDG_RUNTIME_DIR=/run/user/1000` to your crontab with __your user ID__ (*get your user id with* `id` *and substitute the '1000' with it*)
+* Result: The hour of the current time is spoken every hour
