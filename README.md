@@ -27,3 +27,10 @@ Basic scripts I found or wrote to utilize the shell's wonderful capabilities
   - Add `@hourly /home/prometheus/shellscripts/speak-time.sh >/dev/null 2>&1` to your crontab (*edit it with* `crontab -e`)
   - Add `XDG_RUNTIME_DIR=/run/user/1000` to your crontab with __your user ID__ (*get your user id with* `id` *and substitute the '1000' with it*)
 * Result: The hour of the current time is spoken every hour
+
+### My Public IP
+* Usage:
+  - rename the file and remove the `.py` file extension
+  - make the file executable (by using `chmod +x my-public-ip`)
+  - get your public ip's by running `./my-public-ip`
+* Result: Your public ipv4 and ipv6 are printed to STDOUT
