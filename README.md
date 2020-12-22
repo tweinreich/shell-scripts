@@ -34,3 +34,8 @@ Basic scripts I found or wrote to utilize the shell's wonderful capabilities
   - make the file executable (by using `chmod +x my-public-ip`)
   - get your public ip's by running `./my-public-ip`
 * Result: Your public ipv4 and ipv6 are printed to STDOUT
+
+### Backup Signal Desktop
+Since Signal Desktop does not provide an export I created this script for archiving your Signal messages. 
+* Result: Backup of your Signal database as `sqlite` and `csv`
+* Hint: Only the messages synchronized with your desktop client can be exported
